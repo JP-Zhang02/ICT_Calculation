@@ -54,13 +54,13 @@ The Python script uses command line arguments to specify input files and an opti
 ### Running the Script
 
 ```bash
-python calculate_dct_qct.py <ground_state_file> <excited_state_file> [--output_file <output_file>]
+python ict.py <ground_state_file> <excited_state_file> [--output_file <output_file>]
 ```
 
 ### Example Command
 
 ```bash
-python calculate_dct_qct.py ground_state.cube excited_state.cube --output_file results.txt
+python ict.py ground_state.cube excited_state.cube --output_file results.txt
 ```
 
 - `<ground_state_file>`: Path to the cube file representing the ground state density.
@@ -100,7 +100,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```text
 MIT License
 
-Copyright (c) 2024 [Your Name]
+Copyright (c) 2024 Jiongpei Zhang
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
