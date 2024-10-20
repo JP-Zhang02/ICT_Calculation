@@ -37,14 +37,13 @@ First, perform a density functional theory (DFT) or time-dependent DFT (TD-DFT) 
 Once you have the checkpoint file, use **`cubegen`** to generate the cube files for both the ground and excited states:
 
 ```bash
-cubegen 0 density=scf ground_state.chk ground_state.cube -3 h
-cubegen 0 density=transition excited_state.chk excited_state.cube -3 h
+cubegen 0 density=scf ground_state.chk ground_state.cube 400 h
 ```
 
 - `density=scf`: Specifies the type of density to extract (e.g., ground state).
-- `density=transition`: Specifies the density for the excited state.
 - `ground_state.chk` / `excited_state.chk`: The checkpoint files from Gaussian calculations.
 - `ground_state.cube` / `excited_state.cube`: Output cube files.
+- `400`: specify number of points along each axis.
 
 Make sure that the cube files for both ground and excited states have **identical grid sizes** for successful calculation.
 
